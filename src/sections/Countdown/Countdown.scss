@@ -1,0 +1,52 @@
+@use "@styles/abstracts" as *;
+
+.countdown {
+  &__grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 auto;
+    gap: 0;
+    max-width: 720px;
+  }
+
+  &__card {
+    flex: 1;
+    text-align: center;
+    padding: 24px 8px;
+    position: relative;
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 30%;
+      bottom: 30%;
+      width: 1px;
+      background-color: var(--clr-border);
+    }
+  }
+
+  &__value {
+    font-family: var(--ff-serif);
+    font-weight: 300;
+    font-size: fluid(38, 64);
+    line-height: 1;
+    color: var(--clr-accent-dark);
+    margin-bottom: 14px;
+  }
+
+  &__label {
+    font-family: var(--ff-sans);
+    font-size: rem(9);
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--clr-muted);
+    opacity: 0.7;
+
+    @include media-tablet {
+      font-size: rem(10);
+      letter-spacing: 4px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@sections/*": ["src/sections/*"],
+      "@styles/*": ["src/styles/*"],
+      "@assets/*": ["src/assets/*"],
+      "@assets/images/*": ["src/assets/images/*"],
+      "@assets/fonts/*": ["src/assets/fonts/*"]
+    }
+  },
+  "exclude": ["dist", "node_modules"]
+}

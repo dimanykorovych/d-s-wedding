@@ -1,0 +1,64 @@
+@use "@styles/abstracts" as *;
+
+.footer {
+  background: var(--clr-bg-alt);
+  padding: 70px 0 50px;
+  text-align: center;
+  border-top: 1px solid var(--clr-border);
+
+  @include media-tablet {
+    padding: 100px 0 60px;
+  }
+
+  &__inner {
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  &__names {
+    font-family: var(--ff-display);
+    font-weight: 400;
+    font-size: rem(42);
+    line-height: 1;
+    color: var(--clr-accent-dark);
+    margin-bottom: 16px;
+
+    @include media-tablet {
+      font-size: rem(56);
+    }
+  }
+
+  &__amp {
+    font-size: 0.7em;
+    margin: 0 8px;
+    vertical-align: 0.08em;
+  }
+
+  &__date {
+    font-family: var(--ff-serif);
+    font-weight: 300;
+    font-size: rem(16);
+    color: var(--clr-muted);
+    margin-bottom: 28px;
+    letter-spacing: 6px;
+  }
+
+  &__thanks {
+    font-family: var(--ff-sans);
+    font-weight: 300;
+    font-size: rem(15);
+    color: var(--clr-muted);
+    line-height: 1.7;
+    max-width: 420px;
+    margin: 0 auto 40px;
+  }
+
+  &__sign {
+    font-family: var(--ff-sans);
+    font-size: rem(10);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--clr-muted);
+    opacity: 0.4;
+  }
+}

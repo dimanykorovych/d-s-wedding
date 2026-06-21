@@ -1,0 +1,120 @@
+@use "@styles/abstracts" as *;
+
+.invitation {
+  padding: 70px 0 30px;
+
+  @include media-tablet {
+    padding: 80px 0 40px;
+  }
+
+  @include media-laptop {
+    padding: 100px 0 60px;
+  }
+
+  &__card {
+    text-align: center;
+    padding: 48px 20px 56px;
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-lg);
+    background: linear-gradient(180deg, var(--clr-white) 0%, var(--clr-bg-alt) 100%);
+    box-shadow: var(--shadow-md);
+    position: relative;
+
+    @include media-mobile {
+      padding: 72px 48px 80px;
+    }
+  }
+
+  &__title {
+    font-family: var(--ff-display);
+    font-weight: 400;
+    font-size: rem(48);
+    line-height: 1;
+    color: var(--clr-accent-dark);
+    letter-spacing: 0.5px;
+    margin-bottom: 44px;
+
+    @include media-mobile {
+      font-size: rem(64);
+      margin-bottom: 52px;
+    }
+
+    @include media-laptop {
+      font-size: rem(80);
+    }
+  }
+
+  &__text {
+    font-family: var(--ff-sans);
+    color: var(--clr-muted);
+    font-size: rem(16);
+    line-height: 1.9;
+    font-weight: 300;
+    max-width: 520px;
+    margin: 0 auto 48px;
+
+    p + p {
+      margin-top: 24px;
+    }
+
+    @include media-mobile {
+      font-size: rem(18);
+    }
+  }
+
+  &__divider {
+    @include size(48px, 1px);
+
+    background-color: var(--clr-accent);
+    opacity: 0.4;
+    margin: 0 auto 40px;
+  }
+
+  &__date {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: end;
+    gap: 20px;
+    max-width: 360px;
+    margin: 0 auto 14px;
+  }
+
+  &__date-side {
+    @include flex-column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__date-line {
+    @include size(100%, 1px);
+    background: var(--clr-accent);
+    opacity: 0.35;
+  }
+
+  &__date-label {
+    font-family: var(--ff-sans);
+    font-size: rem(11);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--clr-muted);
+  }
+
+  &__date-num {
+    font-family: var(--ff-serif);
+    font-weight: 300;
+    font-size: fluid(50, 112);
+    line-height: 1;
+    color: var(--clr-accent-dark);
+  }
+
+  &__year {
+    font-family: var(--ff-serif);
+    font-weight: 300;
+    color: var(--clr-muted);
+    letter-spacing: 10px;
+    font-size: rem(16);
+    text-align: center;
+    margin-top: 18px;
+    padding-left: 10px;
+  }
+}

@@ -1,0 +1,11 @@
+@use "@styles/abstracts" as *;
+
+@include font-face("CormorantGaramond", "CormorantGaramond-Light", 300);
+@include font-face("CormorantGaramond", "CormorantGaramond-LightItalic", 300, italic);
+@include font-face("CormorantGaramond", "CormorantGaramond-Regular", 400);
+@include font-face("CormorantGaramond", "CormorantGaramond-Italic", 400, italic);
+@include font-face("CormorantGaramond", "CormorantGaramond-Medium", 500);
+@include font-face("JosefinSans", "JosefinSans-Light", 300);
+@include font-face("JosefinSans", "JosefinSans-Regular", 400);
+@include font-face("JosefinSans", "JosefinSans-Medium", 500);
+@include font-face("GreatVibes", "GreatVibes-Regular", 400);
