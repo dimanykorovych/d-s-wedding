@@ -2,18 +2,25 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import "./Hero.scss";
 
-import heroImg from "@assets/images/hero-bg.jpeg";
+import heroMobile from "@assets/images/hero-bg-768.webp";
+import heroTablet from "@assets/images/hero-bg-1200.webp";
+import heroDesktop from "@assets/images/hero-bg-1920.webp";
 
 const Hero = () => {
   return (
     <section className="hero" id="hero">
-      <img
-        src={heroImg}
-        alt="Дмитро та Світлана"
-        className="hero__bg"
-        width={1536}
-        height={1920}
-      />
+      <picture>
+        <source media="(max-width: 768px)" srcSet={heroMobile} />
+        <source media="(max-width: 1200px)" srcSet={heroTablet} />
+        <img
+          src={heroDesktop}
+          alt="Дмитро та Світлана"
+          className="hero__bg"
+          width={1920}
+          height={1080}
+          fetchPriority="high"
+        />
+      </picture>
 
       <div className="hero__overlay"></div>
 

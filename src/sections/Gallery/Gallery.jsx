@@ -12,7 +12,7 @@ import g3 from "@assets/images/galery/g3.jpg";
 import g4 from "@assets/images/galery/g4.jpg";
 import g5 from "@assets/images/galery/g5.jpg";
 
-import v1 from "@assets/videos/video1.MOV";
+import v1 from "@assets/videos/video1.mp4";
 
 import "./Gallery.scss";
 
@@ -96,7 +96,7 @@ export default function Gallery() {
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
             >
-              <video controls preload="metadata" poster={poster} loop>
+              <video controls preload="none" poster={poster} loop>
                 <source src={src} type="video/mp4" />
               </video>
             </motion.div>
