@@ -19,9 +19,7 @@
 
   &--scrolled {
     background-color: var(--clr-bg-alt);
-    box-shadow:
-      0 1px 3px rgba($clr-black, 0.08),
-      0 4px 12px rgba($clr-black, 0.04);
+    box-shadow: 0 2px 12px rgb(var(--clr-black) / 0.1);
   }
 
   &__container {
@@ -35,7 +33,7 @@
     font-family: var(--ff-display);
     font-size: rem(32);
     color: var(--clr-accent-mist);
-    text-shadow: 0 1px 6px rgba($color: $clr-black, $alpha: 0.35);
+    text-shadow: 0 1px 6px rgb(var(--clr-black) / 0.35);
     transition:
       color var(--transition-base),
       text-shadow var(--transition-base);
@@ -78,7 +76,7 @@
 
     .header:not(.header--scrolled) & {
       color: var(--clr-accent-mist);
-      text-shadow: 0 1px 4px rgba($color: $clr-black, $alpha: 0.3);
+      text-shadow: 0 1px 4px rgb(var(--clr-black) / 0.3);
     }
 
     &::after {
@@ -126,7 +124,7 @@
     right: 0;
     background-color: var(--clr-bg-alt);
     padding: 24px 32px 32px;
-    box-shadow: 0 8px 12px -8px rgba($clr-black, 0.2);
+    box-shadow: 0 8px 12px -8px rgb(var(--clr-black) / 0.2);
   }
 
   &__mobile-list {

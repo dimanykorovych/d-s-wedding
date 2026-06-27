@@ -46,7 +46,7 @@
 
   &__text {
     font-family: var(--ff-sans);
-    color: var(--clr-muted);
+    color: var(--clr-text);
     font-size: rem(16);
     line-height: 1.9;
     font-weight: 400;
@@ -96,7 +96,7 @@
     font-size: rem(11);
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: var(--clr-muted);
+    color: var(--clr-text);
   }
 
   &__date-num {
@@ -110,7 +110,7 @@
   &__year {
     font-family: var(--ff-serif);
     font-weight: 400;
-    color: var(--clr-muted);
+    color: var(--clr-text);
     letter-spacing: 10px;
     font-size: rem(16);
     text-align: center;

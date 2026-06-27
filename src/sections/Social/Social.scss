@@ -14,7 +14,7 @@
   }
 
   &__card {
-    background: var(--clr-accent-mist);
+    background: var(--clr-bg-alt);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
     padding: 36px 24px;
@@ -148,6 +148,6 @@
     font-family: var(--ff-serif);
     font-style: italic;
     font-size: rem(13);
-    color: var(--clr-muted);
+    color: var(--clr-text);
   }
 }

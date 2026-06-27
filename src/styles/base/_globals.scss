@@ -69,7 +69,7 @@ body {
     text-align: center;
     font-family: var(--ff-serif);
     font-style: italic;
-    color: var(--clr-muted);
+    color: var(--clr-text);
     font-size: rem(20);
     font-weight: 400;
     margin-bottom: 50px;
@@ -103,12 +103,12 @@ body {
   cursor: pointer;
 
   &--primary {
-    background: var(--clr-accent);
-    color: var(--clr-white);
+    background-color: var(--clr-accent);
+    color: var(--clr-text-alt);
     box-shadow: var(--shadow-sm);
 
     &:hover {
-      background: var(--clr-accent-dark);
+      background-color: var(--clr-accent-dark);
       transform: translateY(-2px);
       box-shadow: var(--shadow-lg);
     }
@@ -116,7 +116,7 @@ body {
 
   &--ghost {
     background: transparent;
-    color: var(--clr-white);
+    color: --c;
     border: 1px solid rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
 
@@ -127,13 +127,13 @@ body {
   }
 
   &--outline {
-    background: var(--clr-white);
+    background: transparent;
     color: var(--clr-accent);
     border: 1px solid var(--clr-accent);
 
     &:hover {
       background: var(--clr-accent);
-      color: var(--clr-white);
+      color: var(--clr-text-alt);
     }
   }
 }
@@ -166,5 +166,5 @@ body {
 
 ::selection {
   background-color: var(--clr-accent);
-  color: var(--clr-white);
+  color: var(--clr-text-alt);
 }

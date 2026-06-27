@@ -2,24 +2,25 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import "./Hero.scss";
 
-import heroMobile from "@assets/images/hero-bg-768.webp";
-import heroTablet from "@assets/images/hero-bg-1200.webp";
-import heroDesktop from "@assets/images/hero-bg-1920.webp";
+import heroBgAvif from "@assets/images/hero-bg.jpg?w=768;1280;1920&format=avif&quality=55&as=srcset";
+import heroBgWebp from "@assets/images/hero-bg.jpg?w=768;1280;1920&format=webp&quality=80&as=srcset";
+import heroBgJpg from "@assets/images/hero-bg.jpg?w=768;1280;1920&format=jpg&quality=85&as=srcset";
 
 const Hero = () => {
   return (
     <section className="hero" id="hero">
       <picture>
-        <source media="(max-width: 768px)" srcSet={heroMobile} />
-        <source media="(max-width: 1200px)" srcSet={heroTablet} />
+        <source srcSet={heroBgAvif} type="image/avif" sizes="100vw" />
+        <source srcSet={heroBgWebp} type="image/webp" sizes="100vw" />
         <img
-          src={heroDesktop}
-          alt=""
+          src={heroBgJpg}
+          fetchPriority="high"
+          sizes="100vw"
+          aria-hidden="true"
           className="hero__bg"
           width={1920}
           height={1080}
-          fetchPriority="high"
-          aria-hidden="true"
+          alt=""
         />
       </picture>
 

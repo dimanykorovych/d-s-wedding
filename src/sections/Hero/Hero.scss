@@ -24,7 +24,7 @@
   &__overlay {
     @include cover;
 
-    background-color: rgba($color: $clr-black, $alpha: 0.4);
+    background-color: rgb(var(--clr-black) / 0.4);
     z-index: var(--z-hero-overlay);
   }
 

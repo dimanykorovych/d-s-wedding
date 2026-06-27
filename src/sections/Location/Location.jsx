@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { MapPin, Navigation } from "lucide-react";
-import locationImg from "@assets/images/location.jpg";
 
 import "./Location.scss";
 
@@ -15,6 +14,11 @@ const MAPS_URL = `https://www.google.com/maps/dir/?api=1&destination=${encodeURI
 const EMBED_URL = `https://www.google.com/maps?q=${encodeURIComponent(
   LOCATION
 )}&output=embed`;
+
+import locationAvif from "@assets/images/location.jpg?w=768;1280;1920&format=avif&quality=55&as=srcset";
+import locationWebp from "@assets/images/location.jpg?w=768;1280;1920&format=webp&quality=80&as=srcset";
+import locationJpg from "@assets/images/location.jpg?w=768;1280;1920&format=jpg&quality=85&as=srcset";
+
 const Location = () => {
   return (
     <section id="location" className="location section section--alt">
@@ -39,13 +43,17 @@ const Location = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="location__image">
-            <img
-              src={locationImg}
-              alt={VENUE_NAME}
-              loading="lazy"
-              width={1600}
-              height={1100}
-            />
+            <picture>
+              <source srcSet={locationAvif} type="image/avif" />
+              <source srcSet={locationWebp} type="image/webp" />
+              <img
+                loading="lazy"
+                src={locationJpg}
+                width={1600}
+                height={1100}
+                alt={VENUE_NAME}
+              />
+            </picture>
           </div>
           <div className="location__info">
             <span className="location__eyebrow">Місце святкування</span>
