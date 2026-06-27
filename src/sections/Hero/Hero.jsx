@@ -14,11 +14,12 @@ const Hero = () => {
         <source media="(max-width: 1200px)" srcSet={heroTablet} />
         <img
           src={heroDesktop}
-          alt="Дмитро та Світлана"
+          alt=""
           className="hero__bg"
           width={1920}
           height={1080}
           fetchPriority="high"
+          aria-hidden="true"
         />
       </picture>
 

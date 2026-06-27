@@ -5,7 +5,7 @@ import "./Invitation.scss";
 const Invitation = () => {
   return (
     <section id="invitation" className="invitation section">
-      <div className="invitaition__container container">
+      <div className="invitation__container container">
         <motion.div
           className="invitation__card"
           initial={{ opacity: 0, y: 40 }}
