@@ -4,15 +4,13 @@ body {
   color: var(--clr-text);
   font-family: var(--ff-sans);
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: var(--line-height-normal);
   background-color: var(--clr-bg);
   min-width: 320px;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: 2000px;
 }
 
 .page {
@@ -40,25 +38,21 @@ body {
     background-color: var(--clr-bg-alt);
   }
 
-  &--pink {
-    background-color: var(--clr-white);
-  }
-
   &__title {
     font-family: var(--ff-serif);
     font-weight: 400;
     font-style: italic;
-    font-size: rem(32);
+    font-size: rem(36);
     line-height: 1.1;
     color: var(--clr-text);
     text-align: center;
     letter-spacing: 0.5px;
 
     @include media-tablet {
-      font-size: rem(40);
+      font-size: rem(48);
     }
     @include media-laptop {
-      font-size: rem(52);
+      font-size: rem(60);
     }
 
     &--gallery {
@@ -76,12 +70,11 @@ body {
     font-family: var(--ff-serif);
     font-style: italic;
     color: var(--clr-muted);
-    font-size: rem(15);
-    font-weight: 300;
+    font-size: rem(20);
+    font-weight: 400;
     margin-bottom: 50px;
 
     @include media-tablet {
-      font-size: rem(18);
       margin-bottom: 80px;
     }
   }
@@ -148,7 +141,7 @@ body {
 .amp {
   font-family: var(--ff-serif);
   font-style: italic;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--clr-accent);
   vertical-align: baseline;
   line-height: 1;

@@ -24,7 +24,10 @@ const Header = () => {
   const active = useActiveSection(links, headerRef);
 
   return (
-    <header ref={headerRef} className={cn("header", scrolled && "header--scrolled")}>
+    <header
+      ref={headerRef}
+      className={cn("header", scrolled && "header--scrolled", open && "header--scrolled")}
+    >
       <div className="header__container container">
         <a href="#hero" className="header__logo">
           Д <span className="header__amp amp">&amp;</span> С

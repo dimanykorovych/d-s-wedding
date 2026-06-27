@@ -18,10 +18,10 @@
   }
 
   &--scrolled {
-    background-color: var(--clr-white);
+    background-color: var(--clr-bg-alt);
     box-shadow:
-      0 1px 3px rgba(0, 0, 0, 0.08),
-      0 4px 12px rgba(0, 0, 0, 0.04);
+      0 1px 3px rgba($clr-black, 0.08),
+      0 4px 12px rgba($clr-black, 0.04);
   }
 
   &__container {
@@ -34,8 +34,8 @@
     line-height: 1;
     font-family: var(--ff-display);
     font-size: rem(32);
-    color: var(--clr-white);
-    text-shadow: 0 1px 6px rgba($color: #000, $alpha: 0.35);
+    color: var(--clr-accent-mist);
+    text-shadow: 0 1px 6px rgba($color: $clr-black, $alpha: 0.35);
     transition:
       color var(--transition-base),
       text-shadow var(--transition-base);
@@ -77,8 +77,8 @@
     transition: color var(--transition-base);
 
     .header:not(.header--scrolled) & {
-      color: var(--clr-white);
-      text-shadow: 0 1px 4px rgba($color: #000, $alpha: 0.3);
+      color: var(--clr-accent-mist);
+      text-shadow: 0 1px 4px rgba($color: $clr-black, $alpha: 0.3);
     }
 
     &::after {
@@ -111,7 +111,7 @@
     color: var(--clr-text);
 
     .header:not(.header--scrolled) & {
-      color: var(--clr-white);
+      color: var(--clr-accent-mist);
     }
 
     @include media-laptop {
@@ -124,17 +124,19 @@
     top: 100%;
     left: 0;
     right: 0;
-    background-color: var(--clr-white);
+    background-color: var(--clr-bg-alt);
     padding: 24px 32px 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    box-shadow: 0 20px 40px rgba($color: #000000, $alpha: 0.1);
+    box-shadow: 0 8px 12px -8px rgba($clr-black, 0.2);
+  }
+
+  &__mobile-list {
+    @include flex-column;
+    gap: 10px;
   }
 
   &__mobile-link {
-    font-size: rem(13);
-    letter-spacing: 1.5px;
+    font-size: rem(16);
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--clr-text);
     text-align: left;

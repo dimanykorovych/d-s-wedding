@@ -16,7 +16,7 @@
     padding: 48px 20px 56px;
     border: 1px solid var(--clr-border);
     border-radius: var(--radius-lg);
-    background: linear-gradient(180deg, var(--clr-white) 0%, var(--clr-bg-alt) 100%);
+    background: var(--clr-bg-alt);
     box-shadow: var(--shadow-md);
     position: relative;
 
@@ -49,7 +49,7 @@
     color: var(--clr-muted);
     font-size: rem(16);
     line-height: 1.9;
-    font-weight: 300;
+    font-weight: 400;
     max-width: 520px;
     margin: 0 auto 48px;
 
@@ -101,7 +101,7 @@
 
   &__date-num {
     font-family: var(--ff-serif);
-    font-weight: 300;
+    font-weight: 400;
     font-size: fluid(50, 112);
     line-height: 1;
     color: var(--clr-accent-dark);
@@ -109,7 +109,7 @@
 
   &__year {
     font-family: var(--ff-serif);
-    font-weight: 300;
+    font-weight: 400;
     color: var(--clr-muted);
     letter-spacing: 10px;
     font-size: rem(16);
