@@ -29,7 +29,7 @@
 
   &__value {
     font-family: var(--ff-serif);
-    font-weight: 300;
+    font-weight: 400;
     font-size: fluid(38, 64);
     line-height: 1;
     color: var(--clr-accent-dark);
@@ -38,14 +38,14 @@
 
   &__label {
     font-family: var(--ff-sans);
-    font-size: rem(9);
+    font-size: rem(10);
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    color: var(--clr-muted);
+    color: var(--clr-text);
     opacity: 0.7;
 
     @include media-tablet {
-      font-size: rem(10);
+      font-size: rem(12);
       letter-spacing: 4px;
     }
   }

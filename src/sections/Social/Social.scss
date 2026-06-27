@@ -14,7 +14,7 @@
   }
 
   &__card {
-    background: var(--clr-white);
+    background: var(--clr-bg-alt);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
     padding: 36px 24px;
@@ -125,7 +125,7 @@
     justify-content: center;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--clr-accent), var(--clr-accent-dark));
-    color: var(--clr-white);
+    color: var(--clr-accent-mist);
     flex-shrink: 0;
   }
 
@@ -148,6 +148,6 @@
     font-family: var(--ff-serif);
     font-style: italic;
     font-size: rem(13);
-    color: var(--clr-muted);
+    color: var(--clr-text);
   }
 }

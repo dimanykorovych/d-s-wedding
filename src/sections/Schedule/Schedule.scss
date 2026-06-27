@@ -6,7 +6,7 @@
     margin: 0 auto;
     padding: 44px 22px 48px;
     text-align: center;
-    background-color: var(--clr-white);
+    background-color: var(--clr-bg-alt);
     border: 1px solid var(--clr-border);
     border-radius: var(--radius-lg);
     position: relative;
@@ -33,7 +33,7 @@
     @include flex-center;
 
     font-family: var(--ff-serif);
-    font-weight: 300;
+    font-weight: 400;
     font-size: rem(72);
     line-height: 1;
     color: var(--clr-accent-dark);
@@ -72,7 +72,7 @@
     font-family: var(--ff-serif);
     font-style: italic;
     font-size: rem(17);
-    color: var(--clr-muted);
+    color: var(--clr-text);
     line-height: 1.6;
     max-width: 320px;
     margin: 0 auto;
