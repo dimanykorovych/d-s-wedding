@@ -5,6 +5,7 @@ import useActiveSection from "@/hooks/useActiveSection";
 import { useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import useHeaderHeight from "@/hooks/useHeaderHeight";
 
 const links = [
   { id: "hero", label: "Головна" },
@@ -22,6 +23,8 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   const scrolled = useScrolled(50);
   const active = useActiveSection(links, headerRef);
+
+  useHeaderHeight(headerRef);
 
   return (
     <header
