@@ -1,35 +1,9 @@
 import { motion } from "framer-motion";
 import { Phone } from "lucide-react";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaTelegramPlane,
-  FaViber,
-  FaWhatsapp
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 import "./Social.scss";
 
 const people = [
-  {
-    name: "Світлана",
-    role: "Наречена",
-    phone: "+48 987 654 321",
-    phoneHref: "tel:+48987654321",
-    socials: [
-      {
-        icon: <FaInstagram strokeWidth={1.5} />,
-        label: "Instagram",
-        handle: "@svitlana",
-        url: "https://instagram.com/"
-      },
-      {
-        icon: <FaTelegramPlane strokeWidth={1.5} />,
-        label: "Telegram",
-        handle: "@svitlana",
-        url: "https://t.me/"
-      }
-    ]
-  },
   {
     name: "Дмитро",
     role: "Наречений",
@@ -59,6 +33,33 @@ const people = [
         label: "Facebook",
         handle: "Dmytro Nykorovych",
         url: "https://facebook.com/nykorovych.d20"
+      }
+    ]
+  },
+
+  {
+    name: "Світлана",
+    role: "Наречена",
+    phone: "+48 793 412 478",
+    phoneHref: "tel:+48793412478",
+    socials: [
+      {
+        icon: <FaInstagram strokeWidth={1.5} />,
+        label: "Instagram",
+        handle: "@svitlana_m27",
+        url: "https://www.instagram.com/svitlana_m27"
+      },
+      {
+        icon: <FaTelegramPlane strokeWidth={1.5} />,
+        label: "Telegram",
+        handle: "@svitlana_makoviichuk",
+        url: "https://t.me/svitlana_makoviichuk"
+      },
+      {
+        icon: <FaWhatsapp strokeWidth={1.5} />,
+        label: "WhatsApp",
+        handle: "+48 793 412 478",
+        url: "https://wa.me/48793412478"
       }
     ]
   }

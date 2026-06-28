@@ -39,7 +39,7 @@ const HowToGet = () => {
             transition={{ duration: 0.5 }}
           >
             <div className="how__icon">
-              <TrainFront />
+              <TrainFront size={24} />
             </div>
             <h3 className="how__title">Потягом</h3>
 
@@ -59,7 +59,7 @@ const HowToGet = () => {
                   href="https://koleo.pl/"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn btn--primary how__btn"
+                  className="how__btn btn btn--primary "
                 >
                   KOLEO
                   <ExternalLink />
@@ -69,7 +69,7 @@ const HowToGet = () => {
                   href="https://jakdojade.pl/"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn btn--outline how__btn"
+                  className="how__btn btn btn--outline "
                 >
                   Jakdojade
                   <ExternalLink />

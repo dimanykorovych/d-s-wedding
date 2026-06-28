@@ -1,3 +1,5 @@
+@use "@styles/abstracts" as *;
+
 .how {
   &__grid {
     display: grid;
@@ -43,30 +45,28 @@
 
   &__title {
     font-family: var(--ff-serif);
-    font-size: 22px;
+    font-size: rem(22);
     font-weight: 500;
-    margin-bottom: 24px;
+    margin-bottom: var(--spacing-lg);
   }
 
   &__steps {
+    @include flex-column;
     width: 100%;
     text-align: left;
-    margin-bottom: 28px;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+    margin-bottom: var(--spacing-md);
+    gap: var(--spacing-md);
   }
 
   &__step {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+    @include flex-column;
+    gap: var(--spacing-xs);
     text-align: center;
   }
 
   &__step-label {
     font-family: var(--ff-sans);
-    font-size: 14px;
+    font-size: rem(14);
     font-weight: 500;
     color: var(--clr-accent);
     text-transform: uppercase;
@@ -75,8 +75,8 @@
 
   &__step-text {
     color: var(--clr-muted);
-    font-size: 14px;
-    line-height: 1.55;
+    font-size: rem(14);
+    line-height: var(--line-height-tight);
   }
 
   &__apps {
@@ -85,30 +85,20 @@
 
   &__apps-title {
     font-family: var(--ff-serif);
-    font-size: 15px;
+    font-size: rem(18);
     font-weight: 500;
-    margin-bottom: 14px;
+    margin-bottom: var(--spacing-md);
   }
 
   &__apps-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: center;
+    gap: 10px;
   }
 
   &__btn {
-    display: inline-flex;
-    gap: 2px;
-    padding: 12px 24px;
-    font-size: 13px;
     width: 100%;
-    max-width: 320px;
-  }
-
-  &__btn-desc {
-    font-size: 11px;
-    color: var(--clr-muted);
-    font-weight: 400;
+    max-width: 260px;
   }
 }
